@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Serenity With ScreenPlay - Project Newtours</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="412edd4840a2ced446941e9fca80e1cf200a7b9b80d4c29657c8ef71b6e42c4c.html">Newtours Login Functionality Feature</a></span>
+                > <span class="truncate-60"><a
+                    href="4e0af2746a7bd6ed5808c8a974bbbd951aa3f9a4d479c89f70a593a7f1d3c3f4.html">Login to Newtours Fail </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-10-2018 10:59</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Newtours Login Functionality Feature</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to ensure Login Functionality works,
+I want to run the cucumber test to verify it is working
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4f1da57b76e3d9920425477fdcb569ffbd9a7a5ab5dec877630e06a61d8901bf.html">Loginfail
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c721517496ffad35fe9a5d73f07a9bd15eb22da3cff8328e1d9f7ec70655c6b0.html">Login
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Login to Newtours Fail
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">When he enter his username and password<br><table class='embedded'><thead><th>username</th><th>password</th></thead><tbody><tr><td>&lt;username&gt;</td><td>&lt;password&gt;</td></tr></tbody></table><br>And he does click on button sign in<br>Then he validate tag "SIGN-OFF"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: No se encuentra el titulo del menu: 'SIGN-OFF' - org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.xpath: //a[.='SIGN-OFF'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'System info: host: 'RC-PC', ip: '172.23.81.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.newtours.stepdefinitions.NewtoursLoginStepDefinitions.heValidateTagSINGOFF(NewtoursLoginStepDefinitions.java:66)<br />✽.he validate tag "SIGN-OFF"(resources/features/newtours_login.feature:24)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4651059167620966598.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Given lukas open Login Newtours" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Opens the browser on Newtours page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas opens the Newtours login page" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Then page should be (1)" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="When he enter his username and password
+| username | password |
+| santi122 | santi112 |" width="1034"/>
+                <img src="ddc7ef2b2e46a5da7cd3c827ae26197e0a036b0c887cdfacb712b6ac518a36c0.png" title="When he enter his username and password
+| username | password |
+| santi122 | santi112 |" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="ddc7ef2b2e46a5da7cd3c827ae26197e0a036b0c887cdfacb712b6ac518a36c0.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas enters 'santi122' into Login textbox Username" width="1034"/>
+                <img src="f4e4af89f8c9b4d44877633dbcd3e061f07029b54ac0150664bd274881746920.png" title="Lukas enters 'santi122' into Login textbox Username" width="1034"/>
+                <img src="96a6ce9475e973e480943f4145c8d1751b901812687f768ef42e5ac20ff3b7b0.png" title="Lukas enters 'santi122' into Login textbox Username" width="1034"/>
+                <img src="96a6ce9475e973e480943f4145c8d1751b901812687f768ef42e5ac20ff3b7b0.png" title="Lukas enters 'santi112' into Login textbox Password" width="1034"/>
+                <img src="4b9e71c0e9f9900aea354aeebad869209bee29925fe80ed7e56afab9ff498932.png" title="Lukas enters 'santi112' into Login textbox Password" width="1034"/>
+                <img src="4b9e71c0e9f9900aea354aeebad869209bee29925fe80ed7e56afab9ff498932.png" title="And he does click on button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="And he does click on button sign in" width="1034"/>
+                <img src="4b9e71c0e9f9900aea354aeebad869209bee29925fe80ed7e56afab9ff498932.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then he validate tag &quot;SIGN-OFF&quot;" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Given lukas open Login Newtours" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Opens the browser on Newtours page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas opens the Newtours login page" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Then page should be (1)" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="When he enter his username and password
+| username | password |
+|  | santi112 |" width="1034"/>
+                <img src="b1f2df082930d929413ed2177170de6221e9442a7a57b21607746f66d01f69aa.png" title="When he enter his username and password
+| username | password |
+|  | santi112 |" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="026fc9f212d3163f27b134f104c26b79f68b8e0ab1beb3765149503262d207e0.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="af89a25eb1a16ac294ecea5a873bd2c5bca65b3945f06b36a533f67eb994c031.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="678ed9949df1e231cb5914fcec3d38b7160c9bb4b6543964c2e492bbca84a83c.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="678ed9949df1e231cb5914fcec3d38b7160c9bb4b6543964c2e492bbca84a83c.png" title="Lukas enters 'santi112' into Login textbox Password" width="1034"/>
+                <img src="b1f2df082930d929413ed2177170de6221e9442a7a57b21607746f66d01f69aa.png" title="Lukas enters 'santi112' into Login textbox Password" width="1034"/>
+                <img src="b1f2df082930d929413ed2177170de6221e9442a7a57b21607746f66d01f69aa.png" title="And he does click on button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="And he does click on button sign in" width="1034"/>
+                <img src="026fc9f212d3163f27b134f104c26b79f68b8e0ab1beb3765149503262d207e0.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then he validate tag &quot;SIGN-OFF&quot;" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Given lukas open Login Newtours" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Opens the browser on Newtours page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas opens the Newtours login page" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Then page should be (1)" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="When he enter his username and password
+| username | password |
+| santiago8112 |  |" width="1034"/>
+                <img src="154c7a81c23de6d57f4b475cd7ad49c09a519dff895dc239999e582b55d9ed36.png" title="When he enter his username and password
+| username | password |
+| santiago8112 |  |" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="9cda801d1f98c84e8bab030999d8ce911360fe2331aef23db9bfc277e48575b5.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas enters 'santiago8112' into Login textbox Username" width="1034"/>
+                <img src="38b778e4a79cecea26385ddf9e48258d0a3737b44b41ee9ed695efb0670116bd.png" title="Lukas enters 'santiago8112' into Login textbox Username" width="1034"/>
+                <img src="be0ef7eba7377c82f3b78601117b70b99bbf0ae672d4521812d845d3e4b45740.png" title="Lukas enters 'santiago8112' into Login textbox Username" width="1034"/>
+                <img src="be0ef7eba7377c82f3b78601117b70b99bbf0ae672d4521812d845d3e4b45740.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="154c7a81c23de6d57f4b475cd7ad49c09a519dff895dc239999e582b55d9ed36.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="9cda801d1f98c84e8bab030999d8ce911360fe2331aef23db9bfc277e48575b5.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="154c7a81c23de6d57f4b475cd7ad49c09a519dff895dc239999e582b55d9ed36.png" title="And he does click on button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="And he does click on button sign in" width="1034"/>
+                <img src="9cda801d1f98c84e8bab030999d8ce911360fe2331aef23db9bfc277e48575b5.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then he validate tag &quot;SIGN-OFF&quot;" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Given lukas open Login Newtours" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Opens the browser on Newtours page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas opens the Newtours login page" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Then page should be (1)" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="When he enter his username and password
+| username | password |
+|  |  |" width="1034"/>
+                <img src="1f9cc543c30c11e2416a89c32524e459b0e204e4792e97f5b75ced57a6a0c092.png" title="When he enter his username and password
+| username | password |
+|  |  |" width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="4edb980c359f3194e55ed501b21dd5b7b887958fc49b7ae072bbe08d1f855199.png" title="Lukas Enter his username and password on Login page " width="1034"/>
+                <img src="8ac3dc509357d58db937a5a237a7dd981742af949db729c074bc239e5414206e.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="af89a25eb1a16ac294ecea5a873bd2c5bca65b3945f06b36a533f67eb994c031.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="678ed9949df1e231cb5914fcec3d38b7160c9bb4b6543964c2e492bbca84a83c.png" title="Lukas enters '' into Login textbox Username" width="1034"/>
+                <img src="678ed9949df1e231cb5914fcec3d38b7160c9bb4b6543964c2e492bbca84a83c.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="1f9cc543c30c11e2416a89c32524e459b0e204e4792e97f5b75ced57a6a0c092.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="4edb980c359f3194e55ed501b21dd5b7b887958fc49b7ae072bbe08d1f855199.png" title="Lukas enters '' into Login textbox Password" width="1034"/>
+                <img src="1f9cc543c30c11e2416a89c32524e459b0e204e4792e97f5b75ced57a6a0c092.png" title="And he does click on button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="And he does click on button sign in" width="1034"/>
+                <img src="4edb980c359f3194e55ed501b21dd5b7b887958fc49b7ae072bbe08d1f855199.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Lukas clicks on Login Button sign in" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then he validate tag &quot;SIGN-OFF&quot;" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF'" width="1034"/>
+                <img src="8a3ca3a6076fd5469dd3433d940daa74dbed9995edc37fdb36038a46c659ca8c.png" title="Then title should be 'SIGN-OFF': <span class='failing-color'>FAILURE</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.9</span>
+</div>
+</body>
+</html>

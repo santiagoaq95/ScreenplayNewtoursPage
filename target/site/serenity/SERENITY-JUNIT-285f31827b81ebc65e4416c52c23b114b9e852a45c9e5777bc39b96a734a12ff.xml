@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="Newtours Login Functionality Feature" skipped="0" tests="5" time="36.89" timestamp="2018-10-24 10:59:21"><testcase name="Login to Newtours"/><testcase name="Login to Newtours Fail"><failure message="No se encuentra el titulo del menu: 'SIGN-OFF' - org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.xpath: //a[.='SIGN-OFF'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'RC-PC', ip: '172.23.81.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: unknown" type="java.lang.AssertionError">No se encuentra el titulo del menu: 'SIGN-OFF' - org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.xpath: //a[.='SIGN-OFF'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RC-PC', ip: '172.23.81.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown</failure><system-err>No se encuentra el titulo del menu: 'SIGN-OFF' - org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.xpath: //a[.='SIGN-OFF'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RC-PC', ip: '172.23.81.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown&#13;
+co.com.newtours.stepdefinitions.NewtoursLoginStepDefinitions.heValidateTagSINGOFF(NewtoursLoginStepDefinitions.java:66)&#13;
+✽.he validate tag "SIGN-OFF"(resources/features/newtours_login.feature:24)&#13;
+</system-err></testcase></testsuite>
