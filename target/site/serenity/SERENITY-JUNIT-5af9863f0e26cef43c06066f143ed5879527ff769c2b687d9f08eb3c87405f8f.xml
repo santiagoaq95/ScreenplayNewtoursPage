@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Newtours Register Functionality Feature" skipped="0" tests="1" time="28.05" timestamp="2018-10-24 11:01:31"><testcase name="Register to Newtours"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Newtours Register Functionality Feature" skipped="0" tests="1" time="8.31" timestamp="2018-10-24 11:16:45"><testcase name="Register to Newtours"><failure message="The page could not be loaded - &#10;Expected: is &lt;1&gt;&#10;     but: was &lt;0&gt;" type="java.lang.AssertionError">The page could not be loaded - 
+Expected: is &lt;1&gt;
+     but: was &lt;0&gt;</failure><system-err>The page could not be loaded - 
+Expected: is &lt;1&gt;
+     but: was &lt;0&gt;&#13;
+co.com.newtours.stepdefinitions.NewtoursRegisterStepDefinition.lukasOpensTheNewtoursRegisterPage(NewtoursRegisterStepDefinition.java:42)&#13;
+✽.Lukas opens the Newtours register page(resources/features/newtours_register.feature:8)&#13;
+</system-err></testcase></testsuite>
