@@ -21,15 +21,16 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.thucydides.core.annotations.ClearCookiesPolicy;
 import net.thucydides.core.annotations.Managed;
 
 /**
- * @author SANTIAGO
+ * @author Santiagoaq95
  *
  */
 public class NewtoursLoginStepDefinitions {
 
-	@Managed(driver = "chrome")
+	@Managed(driver = "chrome",clearCookies=ClearCookiesPolicy.BeforeEachTest,uniqueSession=true, options="--headless")
 	private WebDriver hisDriver;
 
 	Actor lukas = new Actor("Lukas");
@@ -38,8 +39,10 @@ public class NewtoursLoginStepDefinitions {
 
 	@Before
 	public void setUp() {
+		
 		lukas.can(BrowseTheWeb.with(hisDriver));
-
+		hisDriver.manage().deleteAllCookies();
+		hisDriver.manage().window().maximize();
 	}
 
 	@Given("^lukas open Login Newtours$")

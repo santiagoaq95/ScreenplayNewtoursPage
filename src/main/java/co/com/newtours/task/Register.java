@@ -14,6 +14,10 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 
+/**
+ * @author Santiagoaq95
+ *
+ */
 public class Register implements Task {
 
 	private RegisterInformation register = new RegisterInformation();
@@ -22,7 +26,9 @@ public class Register implements Task {
 		register.RegisterContactInformation(first, last, number, email);
 	}
 
-
+	/**
+	 * El actor realiza el registro en tres clase llamadas desde el instrumented
+	 */
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
@@ -54,8 +60,6 @@ public class Register implements Task {
 		String country = params.get(0).get("country");
 		return instrumented(RegisterMailing.class, address1, address2, city, state, postalCode, country);
 	}
-
-
 
 	public static Performable theUser(DataTable information) {
 		List<Map<String, String>> params = information.asMaps(String.class, String.class);

@@ -8,6 +8,12 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
+/**
+ * @author Santiagoaq95
+ * 
+ * Metodo para abrir la página 
+ *
+ */
 public class OpenTheBrowser implements Task {
 
 	private PageObject page;

@@ -15,12 +15,14 @@ import net.thucydides.core.annotations.Step;
 
 public class Write implements Task {
 	private Usuario user;
-	
 
 	public Write(String user, String pass) {
 		this.user = new Usuario(user, pass);
 	}
 
+	/**
+	 * El actor ingresa los datos del username y el password en el login
+	 */
 	@Override
 	@Step("{0} Enter his username and password on Login page ")
 	public <T extends Actor> void performAs(T actor) {
@@ -28,7 +30,6 @@ public class Write implements Task {
 				Enter.theValue(this.user.getPassword()).into(NewtoursLoginPage.LOGIN_PASSWORD));
 
 	}
-
 
 	public static Write onFields(DataTable lista) {
 		List<Map<String, String>> params = lista.asMaps(String.class, String.class);

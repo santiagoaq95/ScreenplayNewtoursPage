@@ -5,8 +5,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
-public class Title implements Question<String>{
 
+public class Title implements Question<String>{
+	// Mètodo para verificar si el usuario ingresado en el login pudo loguearse
 	@Override
 	public String answeredBy(Actor actor) {
 		

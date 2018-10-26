@@ -2,6 +2,13 @@ package co.com.newtours.utils;
 
 import co.com.newtours.models.Persona;
 
+/**
+ * @author Santiagoaq95		
+ * 
+ * Clase que divide el registro en tres partes para 
+ * mejorar la integración con las demás clases
+ *
+ */
 public class RegisterInformation {
 
 	private Persona persona =new Persona();

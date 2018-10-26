@@ -6,7 +6,8 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
 public class Country implements Question<String>{
-
+	
+	//verifica si la ciudad que escribio el driver sea el correcto
 	@Override
 	public String answeredBy(Actor actor) {
 		
